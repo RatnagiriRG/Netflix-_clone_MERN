@@ -34,7 +34,7 @@ function Signup() {
     <div className="signup-container">
       <BackgroundImage />
       <div className="content">
-        <Header />
+        <Header  />
         <div className="body flex column a-center j-center">
           <div className="text flex column">
             <h1>Unlimited movies, Tv Shows and more</h1>

@@ -5,8 +5,10 @@ import backgroundImage from "../assets/home.jpg";
 import MovieLogo from "../assets/homeTitle.webp";
 import { FaPlay } from "react-icons/fa";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 function Netflix() {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => {
@@ -27,7 +29,10 @@ function Netflix() {
             <img src={MovieLogo} alt="Movie Logo" />
           </div>
           <div className="buttons flex">
-            <button className="flex a-center j-center">
+            <button
+              className="flex a-center j-center"
+              onClick={() => navigate("player")}
+            >
               <FaPlay /> Play
             </button>
             <button className="flex a-center j-center">
